@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Moonlit Books - Edit Review</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+      rel='stylesheet'>
+
+<link rel="stylesheet" href="css/addreview.css">
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar" id="sidebar">
+
+        <div>
+
+            <div class="brand">
+
+                <img src="image/logo.png"
+                     alt="Moonlit Books Logo"
+                     class="logo">
+
+                <div class="brand-text">
+
+                    <h2>
+                        Moonlit <br>
+                        Books
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <ul class="menu-links">
+
+                <li>
+                    <a href="dashboard.html">
+                        <i class='bx bxs-dashboard'></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="mybooks.html">
+                        <i class='bx bx-book'></i>
+                        <span>My Books</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="toread.html">
+                        <i class='bx bx-bookmark'></i>
+                        <span>To Read</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="currentlyreading.html">
+                        <i class='bx bx-time-five'></i>
+                        <span>Currently Reading</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="read.html">
+                        <i class='bx bx-check-circle'></i>
+                        <span>Read</span>
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="review.html">
+                        <i class='bx bx-star'></i>
+                        <span>Reviews</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="stats.html">
+                        <i class='bx bx-bar-chart-alt-2'></i>
+                        <span>Stats</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="profile.html">
+                        <i class='bx bx-user'></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="logout-btn">
+
+            <a href="index.html">
+
+                <i class='bx bx-log-out'></i>
+
+                <span>Logout</span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- MAIN -->
+    <div class="main-content">
+
+        <div class="topbar">
+
+            <div class="menu-toggle" id="menuToggle">
+
+                <i class='bx bx-menu'></i>
+
+            </div>
+
+            <div class="search-box">
+
+                <input type="text"
+                       placeholder="Search books...">
+
+                <i class='bx bx-search'></i>
+
+            </div>
+
+            <div class="top-right">
+
+                <a href="notification.html"
+                   class="notification">
+
+                    <i class='bx bx-bell'></i>
+
+                    <span>3</span>
+
+                </a>
+
+                <div class="profile-box">
+
+                    <img src="image/profilepicture.jpg"
+                         alt="Profile"
+                         class="profile-img">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- REVIEW WRAPPER -->
+        <div class="review-wrapper">
+
+            <!-- LEFT -->
+            <div class="review-sidebar">
+
+                <a href="review.html"
+                   class="back-btn">
+
+                    <i class='bx bx-arrow-back'></i>
+
+                    Back to Reviews
+
+                </a>
+
+                <div class="book-card">
+
+                    <img src="https://m.media-amazon.com/images/I/71PNGYHykrL.jpg"
+                         alt="Book Cover"
+                         class="book-cover">
+
+                    <span class="genre">
+                        Romance
+                    </span>
+
+                    <h2>
+                        It Starts With Us
+                    </h2>
+
+                    <p>
+                        Colleen Hoover
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT -->
+            <div class="review-form-card">
+
+                <h1>
+                    Edit Review
+                </h1>
+
+                <div class="form-section">
+
+                    <label>
+                        Your Rating
+                    </label>
+
+                    <div class="rating-stars">
+
+                        <i class='bx bxs-star active'></i>
+                        <i class='bx bxs-star active'></i>
+                        <i class='bx bxs-star active'></i>
+                        <i class='bx bxs-star active'></i>
+                        <i class='bx bx-star'></i>
+
+                    </div>
+
+                </div>
+
+                <div class="form-section">
+
+                    <label>
+                        Your Review
+                    </label>
+
+                    <textarea>A deeply emotional story with strong characters and beautiful writing.</textarea>
+
+                </div>
+
+                <div class="button-group">
+
+                    <a href="review.html"
+                       class="cancel-btn">
+
+                        Cancel
+
+                    </a>
+
+                    <a href="review.html"
+                       class="submit-btn">
+
+                        Save Review
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+const menuToggle =
+    document.getElementById("menuToggle");
+
+const sidebar =
+    document.getElementById("sidebar");
+
+menuToggle.onclick = function(){
+
+    sidebar.classList.toggle("close");
+
+};
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Moonlit Books - Reviews</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+          rel='stylesheet'>
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="css/review.css">
+
+</head>
+
+<body>
+
+    <!-- DASHBOARD -->
+    <div class="dashboard-container">
+
+        <!-- SIDEBAR -->
+        <div class="sidebar"
+             id="sidebar">
+
+            <!-- TOP -->
+            <div>
+
+                <!-- BRAND -->
+                <div class="brand">
+
+                    <img src="image/logo.png"
+                         alt="Moonlit Books Logo"
+                         class="logo">
+
+                    <div class="brand-text">
+
+                        <h2>
+                            Moonlit <br>
+                            Books
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <!-- MENU -->
+                <ul class="menu-links">
+
+                    <li>
+
+                        <a href="dashboard.html">
+
+                            <i class='bx bxs-dashboard'></i>
+
+                            <span>
+                                Dashboard
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="mybooks.html">
+
+                            <i class='bx bx-book'></i>
+
+                            <span>
+                                My Books
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="toread.html">
+
+                            <i class='bx bx-bookmark'></i>
+
+                            <span>
+                                To Read
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="currentlyreading.html">
+
+                            <i class='bx bx-time-five'></i>
+
+                            <span>
+                                Currently Reading
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="read.html">
+
+                            <i class='bx bx-check-circle'></i>
+
+                            <span>
+                                Read
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li class="active">
+
+                        <a href="review.html">
+
+                            <i class='bx bx-star'></i>
+
+                            <span>
+                                Reviews
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="stats.html">
+
+                            <i class='bx bx-bar-chart-alt-2'></i>
+
+                            <span>
+                                Stats
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="profile.html">
+
+                            <i class='bx bx-user'></i>
+
+                            <span>
+                                Profile
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- LOGOUT -->
+            <div class="logout-btn">
+
+                <a href="index.html">
+
+                    <i class='bx bx-log-out'></i>
+
+                    <span>
+                        Logout
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- MAIN -->
+        <div class="main-content">
+
+            <!-- TOPBAR -->
+            <div class="topbar">
+
+                <!-- MENU -->
+                <div class="menu-toggle"
+                     id="menuToggle">
+
+                    <i class='bx bx-menu'></i>
+
+                </div>
+
+                <!-- SEARCH -->
+                <div class="search-box">
+
+                    <input type="text"
+                           placeholder="Search reviews...">
+
+                    <i class='bx bx-search'></i>
+
+                </div>
+
+                <!-- RIGHT -->
+                <div class="top-right">
+
+                    <!-- NOTIFICATION -->
+                    <a href="notification.html"
+                       class="notification">
+
+                        <i class='bx bx-bell'></i>
+
+                        <span>
+                            3
+                        </span>
+
+                    </a>
+
+                    <!-- PROFILE -->
+                    <div class="profile-box">
+
+                        <img src="image/profilepicture.jpg"
+                             alt="Profile"
+                             class="profile-img">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- HEADER -->
+            <div class="page-header">
+
+                <div>
+
+                    <h1>
+                        Book Reviews
+                    </h1>
+
+                    <p>
+                        Your thoughts and ratings on completed books.
+                    </p>
+
+                </div>
+
+                <!-- ADD REVIEW BUTTON -->
+                <a href="addreview.html"
+                   class="add-review-btn">
+
+                    <i class='bx bx-plus'></i>
+
+                    Add Review
+
+                </a>
+
+            </div>
+
+            <!-- REVIEW GRID -->
+            <div class="review-grid">
+
+                <!-- REVIEW 1 -->
+                <div class="review-card">
+
+                    <!-- BOOK -->
+                    <div class="book-side">
+
+                        <img src="https://m.media-amazon.com/images/I/71PNGYHykrL.jpg"
+                             alt="It Starts With Us"
+                             class="book-cover">
+
+                    </div>
+
+                    <!-- CONTENT -->
+                    <div class="review-content">
+
+                        <span class="genre">
+                            Romance
+                        </span>
+
+                        <h2>
+                            It Starts With Us
+                        </h2>
+
+                        <p class="author">
+                            by Colleen Hoover
+                        </p>
+
+                        <!-- RATING -->
+                        <div class="rating">
+
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+
+                            <span>
+                                4.5/5
+                            </span>
+
+                        </div>
+
+                        <!-- REVIEW -->
+                        <div class="review-text">
+
+                            <p>
+                                A deeply emotional story with strong characters
+                                and beautiful writing. The plot was engaging
+                                from beginning until the end.
+                            </p>
+
+                        </div>
+
+                        <!-- FOOTER -->
+                        <div class="review-footer">
+
+                            <span>
+                                Reviewed on 22 May 2026
+                            </span>
+
+                            <a href="addreview.html?book=itstartswithus"
+                               class="edit-btn">
+
+                                Edit Review
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- REVIEW 2 -->
+                <div class="review-card">
+
+                    <!-- BOOK -->
+                    <div class="book-side">
+
+                        <img src="https://m.media-amazon.com/images/I/81ANaVZk5LL._SL1500_.jpg"
+                             alt="Atomic Habits"
+                             class="book-cover">
+
+                    </div>
+
+                    <!-- CONTENT -->
+                    <div class="review-content">
+
+                        <span class="genre">
+                            Self-Help
+                        </span>
+
+                        <h2>
+                            Atomic Habits
+                        </h2>
+
+                        <p class="author">
+                            by James Clear
+                        </p>
+
+                        <!-- RATING -->
+                        <div class="rating">
+
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+
+                            <span>
+                                5/5
+                            </span>
+
+                        </div>
+
+                        <!-- REVIEW -->
+                        <div class="review-text">
+
+                            <p>
+                                One of the best self-improvement books I have
+                                ever read. The advice is simple, practical,
+                                and easy to apply in daily life.
+                            </p>
+
+                        </div>
+
+                        <!-- FOOTER -->
+                        <div class="review-footer">
+
+                            <span>
+                                Reviewed on 14 May 2026
+                            </span>
+
+                            <a href="addreview.html?book=atomichabits"
+                               class="edit-btn">
+
+                                Edit Review
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- REVIEW 3 -->
+                <div class="review-card">
+
+                    <!-- BOOK -->
+                    <div class="book-side">
+
+                        <img src="https://covers.openlibrary.org/b/isbn/9781786892737-L.jpg"
+                             alt="The Midnight Library"
+                             class="book-cover">
+
+                    </div>
+
+                    <!-- CONTENT -->
+                    <div class="review-content">
+
+                        <span class="genre">
+                            Fiction
+                        </span>
+
+                        <h2>
+                            The Midnight Library
+                        </h2>
+
+                        <p class="author">
+                            by Matt Haig
+                        </p>
+
+                        <!-- RATING -->
+                        <div class="rating">
+
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star'></i>
+
+                            <span>
+                                4/5
+                            </span>
+
+                        </div>
+
+                        <!-- REVIEW -->
+                        <div class="review-text">
+
+                            <p>
+                                Thought-provoking and meaningful. The concept
+                                was unique and inspiring, although some parts
+                                felt slightly slow.
+                            </p>
+
+                        </div>
+
+                        <!-- FOOTER -->
+                        <div class="review-footer">
+
+                            <span>
+                                Reviewed on 5 May 2026
+                            </span>
+
+                            <a href="addreview.html?book=midnightlibrary"
+                               class="edit-btn">
+
+                                Edit Review
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- REVIEW 4 -->
+                <div class="review-card">
+
+                    <!-- BOOK -->
+                    <div class="book-side">
+
+                        <img src="https://covers.openlibrary.org/b/isbn/9780590353427-L.jpg"
+                             alt="Harry Potter and the Sorcerer's Stone"
+                             class="book-cover">
+
+                    </div>
+
+                    <!-- CONTENT -->
+                    <div class="review-content">
+
+                        <span class="genre">
+                            Fiction
+                        </span>
+
+                        <h2>
+                            Harry Potter and the Sorcerer's Stone
+                        </h2>
+
+                        <p class="author">
+                            by J.K. Rowling
+                        </p>
+
+                        <!-- RATING -->
+                        <div class="rating">
+
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+
+                            <span>
+                                5/5
+                            </span>
+
+                        </div>
+
+                        <!-- REVIEW -->
+                        <div class="review-text">
+
+                            <p>
+                                Inspirational and meaningful with powerful
+                                lessons about dreams and destiny.
+                            </p>
+
+                        </div>
+
+                        <!-- FOOTER -->
+                        <div class="review-footer">
+
+                            <span>
+                                Reviewed on 1 May 2026
+                            </span>
+
+                            <a href="addreview.html?book=alchemist"
+                               class="edit-btn">
+
+                                Edit Review
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                        <!-- FOOTER -->
+                        <div class="review-footer">
+
+                            <span>
+                                Reviewed on 28 April 2026
+                            </span>
+
+                            <a href="addreview.html?book=sapiens"
+                               class="edit-btn">
+
+                                Edit Review
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        const menuToggle =
+            document.getElementById("menuToggle");
+
+        const sidebar =
+            document.getElementById("sidebar");
+
+        menuToggle.onclick = function(){
+
+            sidebar.classList.toggle("close");
+
+        };
+
+    </script>
+
+</body>
+</html>

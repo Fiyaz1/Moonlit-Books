@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Moonlit Books - Read</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+          rel='stylesheet'>
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="css/read.css">
+
+</head>
+
+<body>
+
+    <!-- DASHBOARD -->
+    <div class="dashboard-container">
+
+        <!-- SIDEBAR -->
+        <div class="sidebar"
+             id="sidebar">
+
+            <!-- TOP -->
+            <div>
+
+                <!-- BRAND -->
+                <div class="brand">
+
+                    <img src="image/logo.png"
+                         alt="Moonlit Books Logo"
+                         class="logo">
+
+                    <div class="brand-text">
+
+                        <h2>
+                            Moonlit <br>
+                            Books
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <!-- MENU -->
+                <ul class="menu-links">
+
+                    <li>
+
+                        <a href="dashboard.html">
+
+                            <i class='bx bxs-dashboard'></i>
+
+                            <span>
+                                Dashboard
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="mybooks.html">
+
+                            <i class='bx bx-book'></i>
+
+                            <span>
+                                My Books
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="toread.html">
+
+                            <i class='bx bx-bookmark'></i>
+
+                            <span>
+                                To Read
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="currentlyreading.html">
+
+                            <i class='bx bx-time-five'></i>
+
+                            <span>
+                                Currently Reading
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li class="active">
+
+                        <a href="read.html">
+
+                            <i class='bx bx-check-circle'></i>
+
+                            <span>
+                                Read
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="review.html">
+
+                            <i class='bx bx-star'></i>
+
+                            <span>
+                                Reviews
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="stats.html">
+
+                            <i class='bx bx-bar-chart-alt-2'></i>
+
+                            <span>
+                                Stats
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="profile.html">
+
+                            <i class='bx bx-user'></i>
+
+                            <span>
+                                Profile
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- LOGOUT -->
+            <div class="logout-btn">
+
+                <a href="index.html">
+
+                    <i class='bx bx-log-out'></i>
+
+                    <span>
+                        Logout
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- MAIN -->
+        <div class="main-content">
+
+            <!-- TOPBAR -->
+            <div class="topbar">
+
+                <!-- MENU -->
+                <div class="menu-toggle"
+                     id="menuToggle">
+
+                    <i class='bx bx-menu'></i>
+
+                </div>
+
+                <!-- SEARCH -->
+                <div class="search-box">
+
+                    <input type="text"
+                           placeholder="Search books, authors...">
+
+                    <i class='bx bx-search'></i>
+
+                </div>
+
+                <!-- RIGHT -->
+                <div class="top-right">
+
+                    <!-- NOTIFICATION -->
+                    <a href="notification.html"
+                       class="notification">
+
+                        <i class='bx bx-bell'></i>
+
+                        <span>
+                            3
+                        </span>
+
+                    </a>
+
+                    <!-- PROFILE -->
+                    <div class="profile-box">
+
+                        <img src="image/profilepicture.jpg"
+                             alt="Profile"
+                             class="profile-img">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- HEADER -->
+            <div class="page-header">
+
+                <div>
+
+                    <h1>
+                        Read Books
+                    </h1>
+
+                    <p>
+                        Your completed reading collection and achievements.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- STATS -->
+            <div class="stats-wrapper">
+
+                <div class="stats-card">
+
+                    <i class='bx bx-book-open'></i>
+
+                    <h2>
+                        4
+                    </h2>
+
+                    <p>
+                        Books Completed
+                    </p>
+
+                </div>
+
+                <div class="stats-card">
+
+                    <i class='bx bx-star'></i>
+
+                    <h2>
+                        4.8
+                    </h2>
+
+                    <p>
+                        Average Rating
+                    </p>
+
+                </div>
+
+                <div class="stats-card">
+
+                    <i class='bx bx-time'></i>
+
+                    <h2>
+                        240h
+                    </h2>
+
+                    <p>
+                        Reading Hours
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- BOOK GRID -->
+            <div class="book-grid">
+
+                <!-- BOOK -->
+                <div class="book-card">
+
+                    <div class="completed-badge">
+
+                        <i class='bx bx-check'></i>
+
+                    </div>
+
+                    <img src="https://covers.openlibrary.org/b/isbn/9781501110368-L.jpg"
+                         alt="Book Cover"
+                         class="book-cover">
+
+                    <div class="book-content">
+
+                        <span class="genre">
+                            Romance
+                        </span>
+
+                        <h3>
+                            It Ends With Us
+                        </h3>
+
+                        <p class="author">
+                            Colleen Hoover
+                        </p>
+
+                        <!-- STARS -->
+                        <div class="rating">
+
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+
+                        </div>
+
+                        <!-- INFO -->
+                        <div class="book-info">
+
+                            <span>
+                                Finished:
+                                22 May 2026
+                            </span>
+
+                        </div>
+
+                        <!-- BUTTON -->
+                        <a href="review.html"
+                           class="review-btn">
+
+                            View Review
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- BOOK -->
+                <div class="book-card">
+
+                    <div class="completed-badge">
+
+                        <i class='bx bx-check'></i>
+
+                    </div>
+
+                    <img src="https://m.media-amazon.com/images/I/81ANaVZk5LL._SL1500_.jpg"
+                         alt="Book Cover"
+                         class="book-cover">
+
+                    <div class="book-content">
+
+                        <span class="genre">
+                            Self-Help
+                        </span>
+
+                        <h3>
+                            Atomic Habits
+                        </h3>
+
+                        <p class="author">
+                            James Clear
+                        </p>
+
+                        <!-- STARS -->
+                        <div class="rating">
+
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+
+                        </div>
+
+                        <!-- INFO -->
+                        <div class="book-info">
+
+                            <span>
+                                Finished:
+                                14 May 2026
+                            </span>
+
+                        </div>
+
+                        <!-- BUTTON -->
+                        <a href="review.html"
+                           class="review-btn">
+
+                            View Review
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- BOOK -->
+                <div class="book-card">
+
+                    <div class="completed-badge">
+
+                        <i class='bx bx-check'></i>
+
+                    </div>
+
+                    <img src="https://covers.openlibrary.org/b/isbn/9781786892737-L.jpg"
+                         alt="Book Cover"
+                         class="book-cover">
+
+                    <div class="book-content">
+
+                        <span class="genre">
+                            Fiction
+                        </span>
+
+                        <h3>
+                            The Midnight Library
+                        </h3>
+
+                        <p class="author">
+                            Matt Haig
+                        </p>
+
+                        <!-- STARS -->
+                        <div class="rating">
+
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star'></i>
+
+                        </div>
+
+                        <!-- INFO -->
+                        <div class="book-info">
+
+                            <span>
+                                Finished:
+                                5 May 2026
+                            </span>
+
+                        </div>
+
+                        <!-- BUTTON -->
+                        <a href="review.html"
+                           class="review-btn">
+
+                            View Review
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- BOOK -->
+                <div class="book-card">
+
+                    <div class="completed-badge">
+
+                        <i class='bx bx-check'></i>
+
+                    </div>
+
+                    <img src="https://covers.openlibrary.org/b/isbn/9780590353427-L.jpg"
+                         alt="Book Cover"
+                         class="book-cover">
+
+                    <div class="book-content">
+
+                        <span class="genre">
+                            Fantasy
+                        </span>
+
+                        <h3>
+                            Harry Potter and the Sorcerer's Stone
+                        </h3>
+
+                        <p class="author">
+                            J.K Rowling
+                        </p>
+
+                        <!-- STARS -->
+                        <div class="rating">
+
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+
+                        </div>
+
+                        <!-- INFO -->
+                        <div class="book-info">
+
+                            <span>
+                                Finished:
+                                1 May 2026
+                            </span>
+
+                        </div>
+
+                        <!-- BUTTON -->
+                        <a href="review.html"
+                           class="review-btn">
+
+                            View Review
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        const menuToggle =
+            document.getElementById("menuToggle");
+
+        const sidebar =
+            document.getElementById("sidebar");
+
+        menuToggle.onclick = function(){
+
+            sidebar.classList.toggle("close");
+
+        };
+
+    </script>
+
+</body>
+</html>

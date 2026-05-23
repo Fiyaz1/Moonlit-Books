@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Moonlit Books Login</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+          rel='stylesheet'>
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid main-container">
+
+        <!-- LOGIN CARD -->
+        <div class="login-card">
+
+            <!-- LEFT PANEL -->
+            <div class="left-panel">
+
+                <div class="stars"></div>
+
+                <div class="brand-section">
+
+                    <img src="image/logo.png"
+                         alt="Moonlit Books Logo"
+                         class="logo">
+
+                    <h1>
+                        Moonlit <br>
+                        Books
+                    </h1>
+
+                    <p class="tagline">
+
+                        Find your next <br>
+                        favorite book.
+
+                    </p>
+
+                    <p class="desc">
+
+                        Track. Review. Discover. <br>
+                        All in one place.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT PANEL -->
+            <div class="right-panel">
+
+                <div class="form-box">
+
+                    <h3 class="login-title">
+
+                        Login
+
+                    </h3>
+
+                    <!-- LOGIN FORM -->
+                    <form id="loginForm">
+
+                        <!-- EMAIL -->
+                        <div class="mb-4">
+
+                            <label class="form-label">
+
+                                Email
+
+                            </label>
+
+                            <input type="text"
+                                   class="form-control custom-input"
+                                   placeholder="Enter Email"
+                                   id="email"
+                                   required>
+
+                        </div>
+
+                        <!-- PASSWORD -->
+                        <div class="mb-2">
+
+                            <label class="form-label">
+
+                                Password
+
+                            </label>
+
+                            <div class="password-box">
+
+                                <input type="password"
+                                       class="form-control custom-input"
+                                       placeholder="Enter Password"
+                                       id="password"
+                                       required>
+
+                                <i class='bx bx-hide toggle-password'></i>
+
+                            </div>
+
+                        </div>
+
+                        <!-- FORGOT PASSWORD -->
+                        <div class="forgot-password">
+
+                            <a href="#">
+
+                                Forgot Password?
+
+                            </a>
+
+                        </div>
+
+                        <!-- BUTTON -->
+                        <button type="submit"
+                                class="login-btn">
+
+                            Login
+
+                        </button>
+
+                        <!-- DEMO -->
+                        <p class="demo-text">
+
+                            Demo Login <br>
+
+                            Email : uitm <br>
+
+                            Password : 1234
+
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        /* SHOW / HIDE PASSWORD */
+
+        const togglePassword =
+            document.querySelector(".toggle-password");
+
+        const password =
+            document.querySelector("#password");
+
+        togglePassword.addEventListener("click", () => {
+
+            const type =
+                password.getAttribute("type") === "password"
+                ? "text"
+                : "password";
+
+            password.setAttribute("type", type);
+
+            togglePassword.classList.toggle("bx-hide");
+            togglePassword.classList.toggle("bx-show");
+
+        });
+
+        /* LOGIN VALIDATION */
+
+        document.getElementById("loginForm")
+        .addEventListener("submit", function(e){
+
+            e.preventDefault();
+
+            let email =
+                document.getElementById("email").value;
+
+            let pass =
+                document.getElementById("password").value;
+
+            if(email === "uitm" &&
+               pass === "1234"){
+
+                window.location.href =
+                    "dashboard.html";
+
+            }
+            else{
+
+                alert(
+                    "Wrong Email or Password!"
+                );
+
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>

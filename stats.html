@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Moonlit Books - Stats</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+          rel='stylesheet'>
+
+    <!-- CHART -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="css/stats.css">
+
+</head>
+
+<body>
+
+    <!-- DASHBOARD -->
+    <div class="dashboard-container">
+
+        <!-- SIDEBAR -->
+        <div class="sidebar"
+             id="sidebar">
+
+            <!-- TOP -->
+            <div>
+
+                <!-- BRAND -->
+                <div class="brand">
+
+                    <img src="image/logo.png"
+                         alt="Moonlit Books Logo"
+                         class="logo">
+
+                    <div class="brand-text">
+
+                        <h2>
+                            Moonlit <br>
+                            Books
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <!-- MENU -->
+                <ul class="menu-links">
+
+                    <li>
+
+                        <a href="dashboard.html">
+
+                            <i class='bx bxs-dashboard'></i>
+
+                            <span>
+                                Dashboard
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="mybooks.html">
+
+                            <i class='bx bx-book'></i>
+
+                            <span>
+                                My Books
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="toread.html">
+
+                            <i class='bx bx-bookmark'></i>
+
+                            <span>
+                                To Read
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="currentlyreading.html">
+
+                            <i class='bx bx-time-five'></i>
+
+                            <span>
+                                Currently Reading
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="read.html">
+
+                            <i class='bx bx-check-circle'></i>
+
+                            <span>
+                                Read
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="review.html">
+
+                            <i class='bx bx-star'></i>
+
+                            <span>
+                                Reviews
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li class="active">
+
+                        <a href="stats.html">
+
+                            <i class='bx bx-bar-chart-alt-2'></i>
+
+                            <span>
+                                Stats
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="profile.html">
+
+                            <i class='bx bx-user'></i>
+
+                            <span>
+                                Profile
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- LOGOUT -->
+            <div class="logout-btn">
+
+                <a href="index.html">
+
+                    <i class='bx bx-log-out'></i>
+
+                    <span>
+                        Logout
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- MAIN -->
+        <div class="main-content">
+
+            <!-- TOPBAR -->
+            <div class="topbar">
+
+                <!-- MENU -->
+                <div class="menu-toggle"
+                     id="menuToggle">
+
+                    <i class='bx bx-menu'></i>
+
+                </div>
+
+                <!-- SEARCH -->
+                <div class="search-box">
+
+                    <input type="text"
+                           placeholder="Search statistics...">
+
+                    <i class='bx bx-search'></i>
+
+                </div>
+
+                <!-- RIGHT -->
+                <div class="top-right">
+
+                    <!-- NOTIFICATION -->
+                    <a href="notification.html"
+                       class="notification">
+
+                        <i class='bx bx-bell'></i>
+
+                        <span>
+                            3
+                        </span>
+
+                    </a>
+
+                    <!-- PROFILE -->
+                    <div class="profile-box">
+
+                        <img src="image/profilepicture.jpg"
+                             alt="Profile"
+                             class="profile-img">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- HEADER -->
+            <div class="page-header">
+
+                <div>
+
+                    <h1>
+                        Reading Statistics
+                    </h1>
+
+                    <p>
+                        Track your reading habits and achievements.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- STATS CARDS -->
+            <div class="stats-cards">
+
+                <div class="stats-card">
+
+                    <i class='bx bx-book-open'></i>
+
+                    <h2>
+                        8
+                    </h2>
+
+                    <p>
+                        Books Read
+                    </p>
+
+                </div>
+
+                <div class="stats-card">
+
+                    <i class='bx bx-time'></i>
+
+                    <h2>
+                        240h
+                    </h2>
+
+                    <p>
+                        Reading Hours
+                    </p>
+
+                </div>
+
+                <div class="stats-card">
+
+                    <i class='bx bx-star'></i>
+
+                    <h2>
+                        4.8
+                    </h2>
+
+                    <p>
+                        Average Rating
+                    </p>
+
+                </div>
+
+                <div class="stats-card">
+
+                    <i class='bx bx-trophy'></i>
+
+                    <h2>
+                        12
+                    </h2>
+
+                    <p>
+                        Monthly Goals
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- CHART GRID -->
+            <div class="chart-grid">
+
+                <!-- LINE CHART -->
+                <div class="chart-card">
+
+                    <div class="chart-header">
+
+                        <h3>
+                            Monthly Reading
+                        </h3>
+
+                    </div>
+
+                    <div class="chart-container">
+
+                        <canvas id="readingChart"></canvas>
+
+                    </div>
+
+                </div>
+
+                <!-- PIE CHART -->
+                <div class="chart-card">
+
+                    <div class="chart-header">
+
+                        <h3>
+                            Top Genres
+                        </h3>
+
+                    </div>
+
+                    <div class="chart-container pie-chart-container">
+
+                        <canvas id="genreChart"></canvas>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ACHIEVEMENTS -->
+            <div class="achievement-section">
+
+                <div class="section-title">
+
+                    <h3>
+                        Reading Achievements
+                    </h3>
+
+                </div>
+
+                <div class="achievement-grid">
+
+                    <div class="achievement-card">
+
+                        <i class='bx bx-medal'></i>
+
+                        <h4>
+                            Bookworm
+                        </h4>
+
+                        <p>
+                            Read 50 books in total
+                        </p>
+
+                    </div>
+
+                    <div class="achievement-card">
+
+                        <i class='bx bx-flame'></i>
+
+                        <h4>
+                            Reading Streak
+                        </h4>
+
+                        <p>
+                            Read for 30 days continuously
+                        </p>
+
+                    </div>
+
+                    <div class="achievement-card">
+
+                        <i class='bx bx-brain'></i>
+
+                        <h4>
+                            Knowledge Master
+                        </h4>
+
+                        <p>
+                            Finished 10 self-help books
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        const menuToggle =
+            document.getElementById("menuToggle");
+
+        const sidebar =
+            document.getElementById("sidebar");
+
+        menuToggle.onclick = function(){
+
+            sidebar.classList.toggle("close");
+
+        };
+
+        // LINE CHART
+        const readingChart =
+            document.getElementById('readingChart');
+
+        new Chart(readingChart, {
+
+            type: 'line',
+
+            data: {
+
+                labels: [
+                    'Jan',
+                    'Feb',
+                    'Mar',
+                    'Apr',
+                    'May',
+                    'Jun'
+                ],
+
+                datasets: [{
+
+                    label: 'Books Read',
+
+                    data: [
+                        4,
+                        6,
+                        8,
+                        5,
+                        10,
+                        15
+                    ],
+
+                    borderColor: '#4B2E83',
+
+                    backgroundColor:
+                        'rgba(75,46,131,0.1)',
+
+                    tension: 0.4,
+
+                    fill: true
+
+                }]
+
+            },
+
+            options: {
+
+                responsive: true,
+
+                maintainAspectRatio: false
+
+            }
+
+        });
+
+        // PIE CHART
+        const genreChart =
+            document.getElementById('genreChart');
+
+        new Chart(genreChart, {
+
+            type: 'pie',
+
+            data: {
+
+                labels: [
+                    'Romance',
+                    'Fantasy',
+                    'Self-Help',
+                    'Fiction',
+                    'History'
+                ],
+
+                datasets: [{
+
+                    data: [
+                        25,
+                        20,
+                        18,
+                        22,
+                        15
+                    ],
+
+                    backgroundColor: [
+                        '#4B2E83',
+                        '#7d4ae8',
+                        '#b799ff',
+                        '#d8c7ff',
+                        '#ede3ff'
+                    ]
+
+                }]
+
+            },
+
+            options: {
+
+                responsive: true,
+
+                maintainAspectRatio: false
+
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>

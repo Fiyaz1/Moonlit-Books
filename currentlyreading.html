@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Moonlit Books - Currently Reading</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+          rel='stylesheet'>
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="css/currentlyreading.css">
+
+</head>
+
+<body>
+
+    <!-- DASHBOARD -->
+    <div class="dashboard-container">
+
+        <!-- SIDEBAR -->
+        <div class="sidebar"
+             id="sidebar">
+
+            <!-- TOP -->
+            <div>
+
+                <!-- BRAND -->
+                <div class="brand">
+
+                    <img src="image/logo.png"
+                         alt="Moonlit Books Logo"
+                         class="logo">
+
+                    <div class="brand-text">
+
+                        <h2>
+                            Moonlit <br>
+                            Books
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <!-- MENU -->
+                <ul class="menu-links">
+
+                    <li>
+
+                        <a href="dashboard.html">
+
+                            <i class='bx bxs-dashboard'></i>
+
+                            <span>
+                                Dashboard
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="mybooks.html">
+
+                            <i class='bx bx-book'></i>
+
+                            <span>
+                                My Books
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="toread.html">
+
+                            <i class='bx bx-bookmark'></i>
+
+                            <span>
+                                To Read
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li class="active">
+
+                        <a href="currentlyreading.html">
+
+                            <i class='bx bx-time-five'></i>
+
+                            <span>
+                                Currently Reading
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="read.html">
+
+                            <i class='bx bx-check-circle'></i>
+
+                            <span>
+                                Read
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="review.html">
+
+                            <i class='bx bx-star'></i>
+
+                            <span>
+                                Reviews
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="stats.html">
+
+                            <i class='bx bx-bar-chart-alt-2'></i>
+
+                            <span>
+                                Stats
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="profile.html">
+
+                            <i class='bx bx-user'></i>
+
+                            <span>
+                                Profile
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- LOGOUT -->
+            <div class="logout-btn">
+
+                <a href="index.html">
+
+                    <i class='bx bx-log-out'></i>
+
+                    <span>
+                        Logout
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- MAIN -->
+        <div class="main-content">
+
+            <!-- TOPBAR -->
+            <div class="topbar">
+
+                <!-- MENU -->
+                <div class="menu-toggle"
+                     id="menuToggle">
+
+                    <i class='bx bx-menu'></i>
+
+                </div>
+
+                <!-- SEARCH -->
+                <div class="search-box">
+
+                    <input type="text"
+                           placeholder="Search books, authors...">
+
+                    <i class='bx bx-search'></i>
+
+                </div>
+
+                <!-- RIGHT -->
+                <div class="top-right">
+
+                    <!-- NOTIFICATION -->
+                    <a href="notification.html"
+                       class="notification">
+
+                        <i class='bx bx-bell'></i>
+
+                        <span>
+                            3
+                        </span>
+
+                    </a>
+
+                    <!-- PROFILE -->
+                    <div class="profile-box">
+
+                        <img src="image/profilepicture.jpg"
+                             alt="Profile"
+                             class="profile-img">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- HEADER -->
+            <div class="page-header">
+
+                <div>
+
+                    <h1>
+                        Currently Reading
+                    </h1>
+
+                    <p>
+                        Continue your reading journey and track your progress.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- CURRENTLY READING GRID -->
+            <div class="reading-grid">
+
+                <!-- BOOK -->
+                <div class="reading-card">
+
+                    <!-- COVER -->
+                    <div class="book-image">
+
+                        <img src="https://covers.openlibrary.org/b/id/12818862-L.jpg"
+                             alt="Book Cover">
+
+                    </div>
+
+                    <!-- CONTENT -->
+                    <div class="reading-content">
+
+                        <span class="genre">
+                            Romance
+                        </span>
+
+                        <h2>
+                            It Ends With Us
+                        </h2>
+
+                        <p class="author">
+                            by Colleen Hoover
+                        </p>
+
+                        <!-- PROGRESS -->
+                        <div class="progress-section">
+
+                            <div class="progress-info">
+
+                                <span>
+                                    Reading Progress
+                                </span>
+
+                                <span>
+                                    65%
+                                </span>
+
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div class="progress-fill fill-65"></div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- DETAILS -->
+                        <div class="reading-details">
+
+                            <div class="detail-box">
+
+                                <h4>
+                                    Current Page
+                                </h4>
+
+                                <p>
+                                    210 / 320
+                                </p>
+
+                            </div>
+
+                            <div class="detail-box">
+
+                                <h4>
+                                    Started
+                                </h4>
+
+                                <p>
+                                    15 May 2026
+                                </p>
+
+                            </div>
+
+                            <div class="detail-box">
+
+                                <h4>
+                                    Reading Time
+                                </h4>
+
+                                <p>
+                                    5h 42m
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <!-- BUTTON -->
+                        <div class="reading-buttons">
+
+                            <a href="currentlyreading.html"
+                               class="continue-btn">
+
+                                Continue Reading
+
+                            </a>
+
+                            <a href="read.html"
+                               class="finish-btn">
+
+                                Mark as Finished
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- SECOND BOOK -->
+                <div class="reading-card">
+
+                    <!-- COVER -->
+                    <div class="book-image">
+
+                        <img src="https://covers.openlibrary.org/b/id/11153219-L.jpg"
+                             alt="Book Cover">
+
+                    </div>
+
+                    <!-- CONTENT -->
+                    <div class="reading-content">
+
+                        <span class="genre">
+                            Self-Help
+                        </span>
+
+                        <h2>
+                            Atomic Habits
+                        </h2>
+
+                        <p class="author">
+                            by James Clear
+                        </p>
+
+                        <!-- PROGRESS -->
+                        <div class="progress-section">
+
+                            <div class="progress-info">
+
+                                <span>
+                                    Reading Progress
+                                </span>
+
+                                <span>
+                                    40%
+                                </span>
+
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div class="progress-fill fill-40"></div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- DETAILS -->
+                        <div class="reading-details">
+
+                            <div class="detail-box">
+
+                                <h4>
+                                    Current Page
+                                </h4>
+
+                                <p>
+                                    112 / 280
+                                </p>
+
+                            </div>
+
+                            <div class="detail-box">
+
+                                <h4>
+                                    Started
+                                </h4>
+
+                                <p>
+                                    10 May 2026
+                                </p>
+
+                            </div>
+
+                            <div class="detail-box">
+
+                                <h4>
+                                    Reading Time
+                                </h4>
+
+                                <p>
+                                    3h 20m
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <!-- BUTTON -->
+                        <div class="reading-buttons">
+
+                            <a href="currentlyreading.html"
+                               class="continue-btn">
+
+                                Continue Reading
+
+                            </a>
+
+                            <a href="read.html"
+                               class="finish-btn">
+
+                                Mark as Finished
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        const menuToggle =
+            document.getElementById("menuToggle");
+
+        const sidebar =
+            document.getElementById("sidebar");
+
+        menuToggle.onclick = function(){
+
+            sidebar.classList.toggle("close");
+
+        };
+
+    </script>
+
+</body>
+</html>

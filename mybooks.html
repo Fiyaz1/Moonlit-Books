@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Moonlit Books - My Books</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+          rel='stylesheet'>
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="css/mybooks.css">
+
+</head>
+
+<body>
+
+    <!-- DASHBOARD -->
+    <div class="dashboard-container">
+
+        <!-- SIDEBAR -->
+        <div class="sidebar"
+             id="sidebar">
+
+            <div>
+
+                <!-- BRAND -->
+                <div class="brand">
+
+                    <img src="image/logo.png"
+                         alt="Moonlit Books Logo"
+                         class="logo">
+
+                    <div class="brand-text">
+
+                        <h2>
+                            Moonlit <br>
+                            Books
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <!-- MENU -->
+                <ul class="menu-links">
+
+                    <li>
+
+                        <a href="dashboard.html">
+
+                            <i class='bx bxs-dashboard'></i>
+
+                            <span>Dashboard</span>
+
+                        </a>
+
+                    </li>
+
+                    <li class="active">
+
+                        <a href="mybooks.html">
+
+                            <i class='bx bx-book'></i>
+
+                            <span>My Books</span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="toread.html">
+
+                            <i class='bx bx-bookmark'></i>
+
+                            <span>To Read</span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="currentlyreading.html">
+
+                            <i class='bx bx-time-five'></i>
+
+                            <span>Currently Reading</span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="read.html">
+
+                            <i class='bx bx-check-circle'></i>
+
+                            <span>Read</span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="review.html">
+
+                            <i class='bx bx-star'></i>
+
+                            <span>Reviews</span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="stats.html">
+
+                            <i class='bx bx-bar-chart-alt-2'></i>
+
+                            <span>Stats</span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="profile.html">
+
+                            <i class='bx bx-user'></i>
+
+                            <span>Profile</span>
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- LOGOUT -->
+            <div class="logout-btn">
+
+                <a href="index.html">
+
+                    <i class='bx bx-log-out'></i>
+
+                    <span>Logout</span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- MAIN -->
+        <div class="main-content">
+
+            <!-- TOPBAR -->
+            <div class="topbar">
+
+                <div class="menu-toggle"
+                     id="menuToggle">
+
+                    <i class='bx bx-menu'></i>
+
+                </div>
+
+                <!-- SEARCH -->
+                <div class="search-box">
+
+                    <input type="text"
+                           placeholder="Search books, authors...">
+
+                    <i class='bx bx-search'></i>
+
+                </div>
+
+                <!-- RIGHT -->
+                <div class="top-right">
+
+                    <!-- NOTIFICATION -->
+                    <a href="notification.html"
+                       class="notification">
+
+                        <i class='bx bx-bell'></i>
+
+                        <span>3</span>
+
+                    </a>
+
+                    <!-- PROFILE -->
+                    <div class="profile-box">
+
+                        <img src="image/profilepicture.jpg"
+                             alt="Profile"
+                             class="profile-img">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- HEADER -->
+            <div class="page-header">
+
+                <div>
+
+                    <h1>
+                        My Books
+                    </h1>
+
+                    <p>
+                        Manage and track your book collection.
+                    </p>
+
+                </div>
+
+                <a href="addbook.html"
+                   class="add-book-btn">
+
+                    <i class='bx bx-plus'></i>
+
+                    Add Book
+
+                </a>
+
+            </div>
+
+            <!-- FILTER -->
+            <div class="filter-wrapper">
+
+                <button class="filter-btn active">
+                    All (36)
+                </button>
+
+                <button class="filter-btn">
+                    To Read (6)
+                </button>
+
+                <button class="filter-btn">
+                    Currently Reading (5)
+                </button>
+
+                <button class="filter-btn">
+                    Read (23)
+                </button>
+
+            </div>
+
+            <!-- TABLE -->
+            <div class="table-card">
+
+                <div class="table-responsive">
+
+                    <table class="table custom-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Book</th>
+                                <th>Author</th>
+                                <th>Status</th>
+                                <th>Rating</th>
+                                <th>Actions</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <!-- BOOK -->
+                            <tr>
+
+                                <td>
+
+                                    <div class="book-info">
+
+                                        <img src="https://m.media-amazon.com/images/I/71aFt4+OTOL._SL1500_.jpg"
+                                             alt="The Alchemist">
+
+                                        <div>
+
+                                            <h5>
+                                                The Alchemist
+                                            </h5>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    Paulo Coelho
+                                </td>
+
+                                <td>
+
+                                    <span class="status read"
+                                          id="status1">
+
+                                        Read
+
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="stars">
+
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bx-star'></i>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="action-wrapper">
+
+                                        <button class="action-btn"
+                                                onclick="toggleMenu('menu1')">
+
+                                            <i class='bx bx-dots-vertical-rounded'></i>
+
+                                        </button>
+
+                                        <!-- DROPDOWN -->
+                                        <div class="action-menu"
+                                             id="menu1">
+
+                                            <h4>
+                                                Change Status
+                                            </h4>
+
+                                            <button onclick="changeStatus('status1','Read','read')">
+
+                                                <i class='bx bx-check-circle'></i>
+
+                                                Read
+
+                                            </button>
+
+                                            <button onclick="changeStatus('status1','Currently Reading','reading')">
+
+                                                <i class='bx bx-book-open'></i>
+
+                                                Currently Reading
+
+                                            </button>
+
+                                            <button onclick="changeStatus('status1','To Read','toread')">
+
+                                                <i class='bx bx-bookmark'></i>
+
+                                                To Read
+
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <!-- BOOK -->
+                            <tr>
+
+                                <td>
+
+                                    <div class="book-info">
+
+                                        <img src="https://m.media-amazon.com/images/I/81ANaVZk5LL._SL1500_.jpg"
+                                             alt="Atomic Habits">
+
+                                        <div>
+
+                                            <h5>
+                                                Atomic Habits
+                                            </h5>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    James Clear
+                                </td>
+
+                                <td>
+
+                                    <span class="status read"
+                                          id="status2">
+
+                                        Read
+
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="stars">
+
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="action-wrapper">
+
+                                        <button class="action-btn"
+                                                onclick="toggleMenu('menu2')">
+
+                                            <i class='bx bx-dots-vertical-rounded'></i>
+
+                                        </button>
+
+                                        <div class="action-menu"
+                                             id="menu2">
+
+                                            <h4>
+                                                Change Status
+                                            </h4>
+
+                                            <button onclick="changeStatus('status2','Read','read')">
+
+                                                <i class='bx bx-check-circle'></i>
+
+                                                Read
+
+                                            </button>
+
+                                            <button onclick="changeStatus('status2','Currently Reading','reading')">
+
+                                                <i class='bx bx-book-open'></i>
+
+                                                Currently Reading
+
+                                            </button>
+
+                                            <button onclick="changeStatus('status2','To Read','toread')">
+
+                                                <i class='bx bx-bookmark'></i>
+
+                                                To Read
+
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <!-- BOOK -->
+                            <tr>
+
+                                <td>
+
+                                    <div class="book-info">
+
+                                        <img src="https://m.media-amazon.com/images/I/71PNGYHykrL._SL1500_.jpg"
+                                             alt="It Starts With Us">
+
+                                        <div>
+
+                                            <h5>
+                                                It Starts With Us
+                                            </h5>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    Colleen Hoover
+                                </td>
+
+                                <td>
+
+                                    <span class="status toread"
+                                          id="status3">
+
+                                        To Read
+
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="stars empty">
+
+                                       <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bx-star'></i>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="action-wrapper">
+
+                                        <button class="action-btn"
+                                                onclick="toggleMenu('menu3')">
+
+                                            <i class='bx bx-dots-vertical-rounded'></i>
+
+                                        </button>
+
+                                        <div class="action-menu"
+                                             id="menu3">
+
+                                            <h4>
+                                                Change Status
+                                            </h4>
+
+                                            <button onclick="changeStatus('status3','Read','read')">
+
+                                                <i class='bx bx-check-circle'></i>
+
+                                                Read
+
+                                            </button>
+
+                                            <button onclick="changeStatus('status3','Currently Reading','reading')">
+
+                                                <i class='bx bx-book-open'></i>
+
+                                                Currently Reading
+
+                                            </button>
+
+                                            <button onclick="changeStatus('status3','To Read','toread')">
+
+                                                <i class='bx bx-bookmark'></i>
+
+                                                To Read
+
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <!-- BOOK -->
+                            <tr>
+
+                                <td>
+
+                                    <div class="book-info">
+
+                                        <img src="https://covers.openlibrary.org/b/isbn/9781786892737-L.jpg"
+                                             alt="The Midnight Library">
+
+                                        <div>
+
+                                            <h5>
+                                                The Midnight Library
+                                            </h5>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    Matt Haig
+                                </td>
+
+                                <td>
+
+                                    <span class="status read"
+                                          id="status1">
+
+                                        Read
+
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="stars empty">
+
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="action-wrapper">
+
+                                        <button class="action-btn"
+                                                onclick="toggleMenu('menu3')">
+
+                                            <i class='bx bx-dots-vertical-rounded'></i>
+
+                                        </button>
+
+                                        <div class="action-menu"
+                                             id="menu3">
+
+                                            <h4>
+                                                Change Status
+                                            </h4>
+
+                                            <button onclick="changeStatus('status3','Read','read')">
+
+                                                <i class='bx bx-check-circle'></i>
+
+                                                Read
+
+                                            </button>
+
+                                            <button onclick="changeStatus('status3','Currently Reading','reading')">
+
+                                                <i class='bx bx-book-open'></i>
+
+                                                Currently Reading
+
+                                            </button>
+
+                                            <button onclick="changeStatus('status3','To Read','toread')">
+
+                                                <i class='bx bx-bookmark'></i>
+
+                                                To Read
+
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <!-- BOOK -->
+                            <tr>
+
+                                <td>
+
+                                    <div class="book-info">
+
+                                        <img src="https://covers.openlibrary.org/b/isbn/9780590353427-L.jpg"
+                                             alt="Harry Potter and the Sorcerer's Stone">
+
+                                        <div>
+
+                                            <h5>
+                                                Harry Potter and the Sorcerer's Stone
+                                            </h5>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    J.K. Rowling
+                                </td>
+
+                                <td>
+
+                                    <span class="status read"
+                                          id="status1">
+
+                                        Read
+
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="stars empty">
+
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="action-wrapper">
+
+                                        <button class="action-btn"
+                                                onclick="toggleMenu('menu3')">
+
+                                            <i class='bx bx-dots-vertical-rounded'></i>
+
+                                        </button>
+
+                                        <div class="action-menu"
+                                             id="menu3">
+
+                                            <h4>
+                                                Change Status
+                                            </h4>
+
+                                            <button onclick="changeStatus('status3','Read','read')">
+
+                                                <i class='bx bx-check-circle'></i>
+
+                                                Read
+
+                                            </button>
+
+                                            <button onclick="changeStatus('status3','Currently Reading','reading')">
+
+                                                <i class='bx bx-book-open'></i>
+
+                                                Currently Reading
+
+                                            </button>
+
+                                            <button onclick="changeStatus('status3','To Read','toread')">
+
+                                                <i class='bx bx-bookmark'></i>
+
+                                                To Read
+
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <!-- BOOK -->
+                            <tr>
+
+                                <td>
+
+                                    <div class="book-info">
+
+                                        <img src="https://covers.openlibrary.org/b/isbn/9781501110368-L.jpg"
+                                             alt="It Ends With Us">
+
+                                        <div>
+
+                                            <h5>
+                                                It Ends With Us
+                                            </h5>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    Colleen Hoover
+                                </td>
+
+                                <td>
+
+                                    <span class="status read"
+                                          id="status1">
+
+                                        Read
+
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="stars empty">
+
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="action-wrapper">
+
+                                        <button class="action-btn"
+                                                onclick="toggleMenu('menu3')">
+
+                                            <i class='bx bx-dots-vertical-rounded'></i>
+
+                                        </button>
+
+                                        <div class="action-menu"
+                                             id="menu3">
+
+                                            <h4>
+                                                Change Status
+                                            </h4>
+
+                                            <button onclick="changeStatus('status3','Read','read')">
+
+                                                <i class='bx bx-check-circle'></i>
+
+                                                Read
+
+                                            </button>
+
+                                            <button onclick="changeStatus('status3','Currently Reading','reading')">
+
+                                                <i class='bx bx-book-open'></i>
+
+                                                Currently Reading
+
+                                            </button>
+
+                                            <button onclick="changeStatus('status3','To Read','toread')">
+
+                                                <i class='bx bx-bookmark'></i>
+
+                                                To Read
+
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        const menuToggle =
+            document.getElementById("menuToggle");
+
+        const sidebar =
+            document.getElementById("sidebar");
+
+        menuToggle.onclick = function(){
+
+            sidebar.classList.toggle("close");
+
+        };
+
+        // TOGGLE DROPDOWN
+        function toggleMenu(menuId){
+
+            const allMenus =
+                document.querySelectorAll(".action-menu");
+
+            allMenus.forEach(menu => {
+
+                if(menu.id !== menuId){
+
+                    menu.classList.remove("show");
+
+                }
+
+            });
+
+            document
+                .getElementById(menuId)
+                .classList.toggle("show");
+
+        }
+
+        // CHANGE STATUS
+        function changeStatus(statusId,text,className){
+
+            const status =
+                document.getElementById(statusId);
+
+            status.innerHTML = text;
+
+            status.className =
+                "status " + className;
+
+            // CLOSE MENU
+            document
+                .querySelectorAll(".action-menu")
+                .forEach(menu => {
+
+                    menu.classList.remove("show");
+
+                });
+
+        }
+
+        // CLOSE WHEN CLICK OUTSIDE
+        window.onclick = function(e){
+
+            if(!e.target.closest(".action-wrapper")){
+
+                document
+                    .querySelectorAll(".action-menu")
+                    .forEach(menu => {
+
+                        menu.classList.remove("show");
+
+                    });
+
+            }
+
+        };
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Moonlit Books - Add Book</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+          rel='stylesheet'>
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="css/addbook.css">
+
+</head>
+
+<body>
+
+    <!-- DASHBOARD -->
+    <div class="dashboard-container">
+
+        <!-- SIDEBAR -->
+        <div class="sidebar"
+             id="sidebar">
+
+            <!-- TOP -->
+            <div>
+
+                <!-- BRAND -->
+                <div class="brand">
+
+                    <img src="image/logo.png"
+                         alt="Moonlit Books Logo"
+                         class="logo">
+
+                    <div class="brand-text">
+
+                        <h2>
+                            Moonlit <br>
+                            Books
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <!-- MENU -->
+                <ul class="menu-links">
+
+                    <li>
+
+                        <a href="dashboard.html">
+
+                            <i class='bx bxs-dashboard'></i>
+
+                            <span>
+                                Dashboard
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li class="active">
+
+                        <a href="mybooks.html">
+
+                            <i class='bx bx-book'></i>
+
+                            <span>
+                                My Books
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="toread.html">
+
+                            <i class='bx bx-bookmark'></i>
+
+                            <span>
+                                To Read
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="currentlyreading.html">
+
+                            <i class='bx bx-time-five'></i>
+
+                            <span>
+                                Currently Reading
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="read.html">
+
+                            <i class='bx bx-check-circle'></i>
+
+                            <span>
+                                Read
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="review.html">
+
+                            <i class='bx bx-star'></i>
+
+                            <span>
+                                Reviews
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="stats.html">
+
+                            <i class='bx bx-bar-chart-alt-2'></i>
+
+                            <span>
+                                Stats
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="profile.html">
+
+                            <i class='bx bx-user'></i>
+
+                            <span>
+                                Profile
+                            </span>
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- LOGOUT -->
+            <div class="logout-btn">
+
+                <a href="index.html">
+
+                    <i class='bx bx-log-out'></i>
+
+                    <span>
+                        Logout
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- MAIN -->
+        <div class="main-content">
+
+            <!-- TOPBAR -->
+            <div class="topbar">
+
+                <!-- MENU -->
+                <div class="menu-toggle"
+                     id="menuToggle">
+
+                    <i class='bx bx-menu'></i>
+
+                </div>
+
+                <!-- SEARCH -->
+                <div class="search-box">
+
+                    <input type="text"
+                           placeholder="Search books...">
+
+                    <i class='bx bx-search'></i>
+
+                </div>
+
+                <!-- RIGHT -->
+                <div class="top-right">
+
+                    <!-- NOTIFICATION -->
+                    <a href="notification.html"
+                       class="notification">
+
+                        <i class='bx bx-bell'></i>
+
+                        <span>
+                            3
+                        </span>
+
+                    </a>
+
+                    <!-- PROFILE -->
+                    <div class="profile-box">
+
+                        <img src="image/profilepicture.jpg"
+                             alt="Profile"
+                             class="profile-img">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PAGE HEADER -->
+            <div class="page-header">
+
+                <div>
+
+                    <h1>
+                        Add New Book
+                    </h1>
+
+                    <p>
+                        Add your favorite books into your collection.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- FORM CONTAINER -->
+            <div class="add-book-wrapper">
+
+                <!-- LEFT -->
+                <div class="upload-section">
+
+                    <div class="upload-box">
+
+                        <i class='bx bx-image-add'></i>
+
+                        <h3>
+                            Upload Book Cover
+                        </h3>
+
+                        <p>
+                            JPG, PNG or JPEG
+                        </p>
+
+                        <input type="file">
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT -->
+                <div class="form-section">
+
+                    <form>
+
+                        <!-- TITLE -->
+                        <div class="form-group">
+
+                            <label>
+                                Book Title
+                            </label>
+
+                            <input type="text"
+                                   placeholder="Enter book title">
+
+                        </div>
+
+                        <!-- AUTHOR -->
+                        <div class="form-group">
+
+                            <label>
+                                Author
+                            </label>
+
+                            <input type="text"
+                                   placeholder="Enter author name">
+
+                        </div>
+
+                        <!-- GENRE -->
+                        <div class="form-group">
+
+                            <label>
+                                Genre
+                            </label>
+
+                            <select>
+
+                                <option>
+                                    Select Genre
+                                </option>
+
+                                <option>
+                                    Romance
+                                </option>
+
+                                <option>
+                                    Fiction
+                                </option>
+
+                                <option>
+                                    Fantasy
+                                </option>
+
+                                <option>
+                                    Self-Help
+                                </option>
+
+                                <option>
+                                    History
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <!-- STATUS -->
+                        <div class="form-group">
+
+                            <label>
+                                Reading Status
+                            </label>
+
+                            <select>
+
+                                <option>
+                                    To Read
+                                </option>
+
+                                <option>
+                                    Currently Reading
+                                </option>
+
+                                <option>
+                                    Read
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <!-- DESCRIPTION -->
+                        <div class="form-group">
+
+                            <label>
+                                Description
+                            </label>
+
+                            <textarea placeholder="Write something about this book..."></textarea>
+
+                        </div>
+
+                        <!-- BUTTONS -->
+                        <div class="button-group">
+
+                            <a href="mybooks.html"
+                               class="cancel-btn">
+
+                                Cancel
+
+                            </a>
+
+                            <button type="submit"
+                                    class="save-btn">
+
+                                Add Book
+
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        const menuToggle =
+            document.getElementById("menuToggle");
+
+        const sidebar =
+            document.getElementById("sidebar");
+
+        menuToggle.onclick = function(){
+
+            sidebar.classList.toggle("close");
+
+        };
+
+    </script>
+
+</body>
+</html>
