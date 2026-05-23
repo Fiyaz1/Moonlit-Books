@@ -489,7 +489,7 @@ body {
     color: #777;
 }
 
-/* ========== FOOTER STYLES (LOGO DIPERKECILKAN) ========== */
+/* ========== FOOTER STYLES (LOGO 32px, TEKS 20px) ========== */
 .dashboard-footer {
     background: #ffffff;
     border-radius: 28px;
@@ -506,7 +506,7 @@ body {
     gap: 40px;
 }
 
-/* Left section - logo + brand + copyright */
+/* Left section */
 .footer-left {
     flex: 1.2;
     min-width: 200px;
@@ -515,22 +515,22 @@ body {
 .footer-brand-row {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     margin-bottom: 18px;
 }
 
-/* LOGO DI FOOTER DIKECILKAN JADI 42px */
+/* Logo dikecilkan ke 32px */
 .footer-logo-img {
-    width: 42px;
-    height: 42px;
+    width: 32px;
+    height: 32px;
     object-fit: contain;
     display: block;
 }
 
-/* TEKS JUGA DIKECILKAN SEDIKIT AGAR PROPORSIONAL */
+/* Teks dikecilkan ke 20px */
 .footer-brand-name {
     font-family: 'Playfair Display', serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     color: #4B2E83;
     line-height: 1.2;
@@ -549,7 +549,7 @@ body {
     font-weight: 400;
 }
 
-/* Newsletter section (sama seperti asal) */
+/* Newsletter */
 .footer-newsletter {
     flex: 1.8;
     min-width: 240px;
@@ -619,7 +619,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* Social section */
+/* Social */
 .footer-social {
     flex: 1;
     min-width: 160px;
