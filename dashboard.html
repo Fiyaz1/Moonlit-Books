@@ -1,596 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moonlit Books Dashboard</title>
 
-    <!-- GOOGLE FONT -->
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
+    <!-- Bootstrap (grid utilities only, minimal impact) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
-          rel="stylesheet">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-          rel="stylesheet">
-
-    <!-- BOXICONS -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
-          rel='stylesheet'>
-
-    <!-- CSS -->
-    <link rel="stylesheet"
-          href="css/dashboard.css">
-
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
 </head>
-
 <body>
 
-    <!-- DASHBOARD -->
-    <div class="dashboard-container">
+<div class="dashboard-container">
 
-        <!-- SIDEBAR -->
-        <div class="sidebar"
-             id="sidebar">
-
-            <!-- TOP -->
-            <div>
-
-                <!-- BRAND -->
-                <div class="brand">
-
-                    <img src="image/logo.png"
-                         alt="Moonlit Books Logo"
-                         class="logo">
-
-                    <div class="brand-text">
-
-                        <h2>
-                            Moonlit <br>
-                            Books
-                        </h2>
-
-                    </div>
-
+    <!-- SIDEBAR -->
+    <div class="sidebar" id="sidebar">
+        <div>
+            <!-- BRAND -->
+            <div class="brand">
+                <img src="image/logo.png" alt="Moonlit Books Logo" class="logo" onerror="this.src='https://placehold.co/58x58/4B2E83/white?text=MB'">
+                <div class="brand-text">
+                    <h2>Moonlit <br>Books</h2>
                 </div>
-
-                <!-- MENU -->
-                <ul class="menu-links">
-
-                    <li class="active">
-
-                        <a href="dashboard.html">
-
-                            <i class='bx bxs-dashboard'></i>
-
-                            <span>
-                                Dashboard
-                            </span>
-
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a href="mybooks.html">
-
-                            <i class='bx bx-book'></i>
-
-                            <span>
-                                My Books
-                            </span>
-
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a href="toread.html">
-
-                            <i class='bx bx-bookmark'></i>
-
-                            <span>
-                                To Read
-                            </span>
-
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a href="currentlyreading.html">
-
-                            <i class='bx bx-time-five'></i>
-
-                            <span>
-                                Currently Reading
-                            </span>
-
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a href="read.html">
-
-                            <i class='bx bx-check-circle'></i>
-
-                            <span>
-                                Read
-                            </span>
-
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a href="review.html">
-
-                            <i class='bx bx-star'></i>
-
-                            <span>
-                                Reviews
-                            </span>
-
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a href="stats.html">
-
-                            <i class='bx bx-bar-chart-alt-2'></i>
-
-                            <span>
-                                Stats
-                            </span>
-
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a href="profile.html">
-
-                            <i class='bx bx-user'></i>
-
-                            <span>
-                                Profile
-                            </span>
-
-                        </a>
-
-                    </li>
-
-                </ul>
-
             </div>
 
-            <!-- LOGOUT -->
-            <div class="logout-btn">
-
-                <a href="index.html">
-
-                    <i class='bx bx-log-out'></i>
-
-                    <span>
-                        Logout
-                    </span>
-
-                </a>
-
-            </div>
-
+            <!-- MENU -->
+            <ul class="menu-links">
+                <li class="active"><a href="dashboard.html"><i class='bx bxs-dashboard'></i><span>Dashboard</span></a></li>
+                <li><a href="mybooks.html"><i class='bx bx-book'></i><span>My Books</span></a></li>
+                <li><a href="toread.html"><i class='bx bx-bookmark'></i><span>To Read</span></a></li>
+                <li><a href="currentlyreading.html"><i class='bx bx-time-five'></i><span>Currently Reading</span></a></li>
+                <li><a href="read.html"><i class='bx bx-check-circle'></i><span>Read</span></a></li>
+                <li><a href="review.html"><i class='bx bx-star'></i><span>Reviews</span></a></li>
+                <li><a href="stats.html"><i class='bx bx-bar-chart-alt-2'></i><span>Stats</span></a></li>
+                <li><a href="profile.html"><i class='bx bx-user'></i><span>Profile</span></a></li>
+            </ul>
         </div>
 
-        <!-- MAIN CONTENT -->
-        <div class="main-content">
-
-            <!-- TOPBAR -->
-            <div class="topbar">
-
-                <!-- MENU TOGGLE -->
-                <div class="menu-toggle"
-                     id="menuToggle">
-
-                    <i class='bx bx-menu'></i>
-
-                </div>
-
-                <!-- SEARCH -->
-                <div class="search-box">
-
-                    <input type="text"
-                           placeholder="Search books, authors...">
-
-                    <i class='bx bx-search'></i>
-
-                </div>
-
-                <!-- RIGHT -->
-                <div class="top-right">
-
-                    <!-- NOTIFICATION -->
-                    <a href="notification.html"
-                       class="notification">
-
-                        <i class='bx bx-bell'></i>
-
-                        <span>
-                            3
-                        </span>
-
-                    </a>
-
-                    <!-- PROFILE -->
-                    <div class="profile-box">
-
-                        <img src="image/profilepicture.jpg"
-                             alt="Profile"
-                             class="profile-img">
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- WELCOME -->
-            <div class="welcome-section">
-
-                <h1>
-                    Welcome back! 👋
-                </h1>
-
-                <p>
-                    Here's your reading overview.
-                </p>
-
-            </div>
-
-            <!-- STATS -->
-            <div class="stats-grid">
-
-                <div class="stats-card">
-
-                    <div class="stats-icon">
-
-                        <i class='bx bx-bookmark'></i>
-
-                    </div>
-
-                    <h4>
-                        To Read
-                    </h4>
-
-                    <h2>
-                        6
-                    </h2>
-
-                </div>
-
-                <div class="stats-card">
-
-                    <div class="stats-icon">
-
-                        <i class='bx bx-book-open'></i>
-
-                    </div>
-
-                    <h4>
-                        Currently Reading
-                    </h4>
-
-                    <h2>
-                        2
-                    </h2>
-
-                </div>
-
-                <div class="stats-card">
-
-                    <div class="stats-icon">
-
-                        <i class='bx bx-check-circle'></i>
-
-                    </div>
-
-                    <h4>
-                        Read
-                    </h4>
-
-                    <h2>
-                        4
-                    </h2>
-
-                </div>
-
-                <div class="stats-card">
-
-                    <div class="stats-icon">
-
-                        <i class='bx bx-star'></i>
-
-                    </div>
-
-                    <h4>
-                        Reviews Written
-                    </h4>
-
-                    <h2>
-                        5
-                    </h2>
-
-                </div>
-
-                <div class="stats-card">
-
-                    <div class="stats-icon">
-
-                        <i class='bx bx-library'></i>
-
-                    </div>
-
-                    <h4>
-                        Total Books
-                    </h4>
-
-                    <h2>
-                        36
-                    </h2>
-
-                </div>
-
-            </div>
-
-            <!-- CHART WRAPPER -->
-            <div class="chart-wrapper">
-
-                <!-- BAR CHART -->
-                <div class="chart-card">
-
-                    <div class="chart-header">
-
-                        <h3>
-                            Books Read This Year
-                        </h3>
-
-                    </div>
-
-                    <!-- BAR CHART -->
-                    <div class="bar-chart">
-
-                        <div class="bar"
-                             style="height:45%;"></div>
-
-                        <div class="bar"
-                             style="height:30%;"></div>
-
-                        <div class="bar"
-                             style="height:25%;"></div>
-
-                        <div class="bar"
-                             style="height:60%;"></div>
-
-                        <div class="bar"
-                             style="height:40%;"></div>
-
-                        <div class="bar"
-                             style="height:70%;"></div>
-
-                        <div class="bar"
-                             style="height:85%;"></div>
-
-                        <div class="bar"
-                             style="height:90%;"></div>
-
-                        <div class="bar"
-                             style="height:65%;"></div>
-
-                        <div class="bar"
-                             style="height:35%;"></div>
-
-                    </div>
-
-                    <!-- MONTH -->
-                    <div class="months">
-
-                        <span>Jan</span>
-                        <span>Feb</span>
-                        <span>Mar</span>
-                        <span>Apr</span>
-                        <span>May</span>
-                        <span>Jun</span>
-                        <span>Jul</span>
-                        <span>Aug</span>
-                        <span>Sep</span>
-                        <span>Oct</span>
-
-                    </div>
-
-                </div>
-
-                <!-- DONUT CHART -->
-                <div class="chart-card">
-
-                    <div class="chart-header">
-
-                        <h3>
-                            Top Genres
-                        </h3>
-
-                    </div>
-
-                    <!-- DONUT -->
-                    <div class="donut-section">
-
-                        <!-- CHART -->
-                        <div class="donut-chart"></div>
-
-                        <!-- LIST -->
-                        <div class="genre-list">
-
-                            <div class="genre-item">
-
-                                <span class="left">
-
-                                    <span class="dot fiction"></span>
-
-                                    Fiction
-
-                                </span>
-
-                                <strong>
-                                    45%
-                                </strong>
-
-                            </div>
-
-                            <div class="genre-item">
-
-                                <span class="left">
-
-                                    <span class="dot fantasy"></span>
-
-                                    Fantasy
-
-                                </span>
-
-                                <strong>
-                                    25%
-                                </strong>
-
-                            </div>
-
-                            <div class="genre-item">
-
-                                <span class="left">
-
-                                    <span class="dot romance"></span>
-
-                                    Romance
-
-                                </span>
-
-                                <strong>
-                                    15%
-                                </strong>
-
-                            </div>
-
-                            <div class="genre-item">
-
-                                <span class="left">
-
-                                    <span class="dot selfhelp"></span>
-
-                                    Self-Help
-
-                                </span>
-
-                                <strong>
-                                    10%
-                                </strong>
-
-                            </div>
-
-                            <div class="genre-item">
-
-                                <span class="left">
-
-                                    <span class="dot others"></span>
-
-                                    Others
-
-                                </span>
-
-                                <strong>
-                                    5%
-                                </strong>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- RECENT -->
-            <div class="recent-card">
-
-                <div class="recent-header">
-
-                    <h3>
-                        Recent Activity
-                    </h3>
-
-                    <button>
-                        View Book
-                    </button>
-
-                </div>
-
-                <div class="recent-content">
-
-                    <img src="https://covers.openlibrary.org/b/isbn/9781501110368-L.jpg"
-                         alt="Book">
-
-                    <div>
-
-                        <h5>
-                            You finished It Ends With Us
-                        </h5>
-
-                        <p>
-                            2 days ago
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+        <!-- LOGOUT -->
+        <div class="logout-btn">
+            <a href="index.html"><i class='bx bx-log-out'></i><span>Logout</span></a>
         </div>
-
     </div>
 
-    <!-- JAVASCRIPT -->
-    <script>
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
 
-        const menuToggle =
-            document.getElementById("menuToggle");
+        <!-- TOPBAR -->
+        <div class="topbar">
+            <div class="menu-toggle" id="menuToggle"><i class='bx bx-menu'></i></div>
+            <div class="search-box">
+                <input type="text" placeholder="Search books, authors...">
+                <i class='bx bx-search'></i>
+            </div>
+            <div class="top-right">
+                <a href="notification.html" class="notification"><i class='bx bx-bell'></i><span>3</span></a>
+                <div class="profile-box">
+                    <img src="image/profilepicture.jpg" alt="Profile" class="profile-img" onerror="this.src='https://randomuser.me/api/portraits/women/68.jpg'">
+                </div>
+            </div>
+        </div>
 
-        const sidebar =
-            document.getElementById("sidebar");
+        <!-- WELCOME -->
+        <div class="welcome-section">
+            <h1>Welcome back! 👋</h1>
+            <p>Here's your reading overview.</p>
+        </div>
 
-        menuToggle.onclick = function(){
+        <!-- STATS CARDS -->
+        <div class="stats-grid">
+            <div class="stats-card"><div class="stats-icon"><i class='bx bx-bookmark'></i></div><h4>To Read</h4><h2>6</h2></div>
+            <div class="stats-card"><div class="stats-icon"><i class='bx bx-book-open'></i></div><h4>Currently Reading</h4><h2>2</h2></div>
+            <div class="stats-card"><div class="stats-icon"><i class='bx bx-check-circle'></i></div><h4>Read</h4><h2>4</h2></div>
+            <div class="stats-card"><div class="stats-icon"><i class='bx bx-star'></i></div><h4>Reviews Written</h4><h2>5</h2></div>
+            <div class="stats-card"><div class="stats-icon"><i class='bx bx-library'></i></div><h4>Total Books</h4><h2>36</h2></div>
+        </div>
 
-            sidebar.classList.toggle("close");
+        <!-- CHARTS -->
+        <div class="chart-wrapper">
+            <!-- BAR CHART -->
+            <div class="chart-card">
+                <div class="chart-header"><h3>Books Read This Year</h3></div>
+                <div class="bar-chart">
+                    <div class="bar" style="height:45%;"></div>
+                    <div class="bar" style="height:30%;"></div>
+                    <div class="bar" style="height:25%;"></div>
+                    <div class="bar" style="height:60%;"></div>
+                    <div class="bar" style="height:40%;"></div>
+                    <div class="bar" style="height:70%;"></div>
+                    <div class="bar" style="height:85%;"></div>
+                    <div class="bar" style="height:90%;"></div>
+                    <div class="bar" style="height:65%;"></div>
+                    <div class="bar" style="height:35%;"></div>
+                </div>
+                <div class="months">
+                    <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span>
+                    <span>May</span><span>Jun</span><span>Jul</span><span>Aug</span>
+                    <span>Sep</span><span>Oct</span>
+                </div>
+            </div>
 
-        };
+            <!-- DONUT CHART -->
+            <div class="chart-card">
+                <div class="chart-header"><h3>Top Genres</h3></div>
+                <div class="donut-section">
+                    <div class="donut-chart"></div>
+                    <div class="genre-list">
+                        <div class="genre-item"><span class="left"><span class="dot fiction"></span>Fiction</span><strong>45%</strong></div>
+                        <div class="genre-item"><span class="left"><span class="dot fantasy"></span>Fantasy</span><strong>25%</strong></div>
+                        <div class="genre-item"><span class="left"><span class="dot romance"></span>Romance</span><strong>15%</strong></div>
+                        <div class="genre-item"><span class="left"><span class="dot selfhelp"></span>Self-Help</span><strong>10%</strong></div>
+                        <div class="genre-item"><span class="left"><span class="dot others"></span>Others</span><strong>5%</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    </script>
+        <!-- RECENT ACTIVITY -->
+        <div class="recent-card">
+            <div class="recent-header"><h3>Recent Activity</h3><button>View Book</button></div>
+            <div class="recent-content">
+                <img src="https://covers.openlibrary.org/b/isbn/9781501110368-L.jpg" alt="Book">
+                <div><h5>You finished It Ends With Us</h5><p>2 days ago</p></div>
+            </div>
+        </div>
 
+        <!-- FOOTER (added as per image) -->
+        <footer class="dashboard-footer">
+            <div class="footer-inner">
+                <div class="footer-brand-area">
+                    <div class="footer-logo-wrap">
+                        <img src="image/logo.png" alt="Moonlit Books" class="footer-logo" onerror="this.src='https://placehold.co/52x52/4B2E83/white?text=MB'">
+                        <div class="footer-brand-text"><h3>Moonlit Books</h3></div>
+                    </div>
+                    <div class="footer-copyright"><p>© 2024 Moonlit Books. All rights reserved.</p></div>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get updates on new arrivals, exclusive offers, and reading tips!</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="button">Submit <i class='bx bx-send'></i></button>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="LinkedIn"><i class='bx bxl-linkedin-square'></i></a>
+                        <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                        <a href="#" aria-label="Facebook"><i class='bx bxl-facebook-square'></i></a>
+                        <a href="#" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+<script>
+    const menuToggle = document.getElementById("menuToggle");
+    const sidebar = document.getElementById("sidebar");
+    menuToggle.onclick = function() {
+        sidebar.classList.toggle("close");
+    };
+</script>
 </body>
 </html>
