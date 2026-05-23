@@ -489,7 +489,7 @@ body {
     color: #777;
 }
 
-/* ========== FOOTER STYLES (DIPERBAIKI - alignment sama seperti sidebar brand) ========== */
+/* ========== FOOTER STYLES (LOGO DIPERKECILKAN) ========== */
 .dashboard-footer {
     background: #ffffff;
     border-radius: 28px;
@@ -515,23 +515,25 @@ body {
 .footer-brand-row {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 12px;
     margin-bottom: 18px;
 }
 
+/* LOGO DI FOOTER DIKECILKAN JADI 42px */
 .footer-logo-img {
-    width: 58px;
-    height: 58px;
+    width: 42px;
+    height: 42px;
     object-fit: contain;
     display: block;
 }
 
+/* TEKS JUGA DIKECILKAN SEDIKIT AGAR PROPORSIONAL */
 .footer-brand-name {
     font-family: 'Playfair Display', serif;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
     color: #4B2E83;
-    line-height: 1.1;
+    line-height: 1.2;
     margin: 0;
 }
 
@@ -547,7 +549,7 @@ body {
     font-weight: 400;
 }
 
-/* Newsletter section */
+/* Newsletter section (sama seperti asal) */
 .footer-newsletter {
     flex: 1.8;
     min-width: 240px;
@@ -658,7 +660,7 @@ body {
     border-color: #4B2E83;
 }
 
-/* RESPONSIVE (original + footer) */
+/* RESPONSIVE */
 @media (max-width: 1200px) {
     .chart-wrapper {
         grid-template-columns: 1fr;
