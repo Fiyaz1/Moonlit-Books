@@ -10,14 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap (grid utilities only, minimal impact) -->
+    <!-- Bootstrap (grid only) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="css/dashboard.css">
+    <!-- External CSS - PASTIKAN PATH INI BETUL UNTUK GITHUB -->
+    <link rel="stylesheet" href="./css/dashboard.css">
 </head>
 <body>
 
@@ -26,15 +26,14 @@
     <!-- SIDEBAR -->
     <div class="sidebar" id="sidebar">
         <div>
-            <!-- BRAND -->
             <div class="brand">
-                <img src="image/logo.png" alt="Moonlit Books Logo" class="logo" onerror="this.src='https://placehold.co/58x58/4B2E83/white?text=MB'">
+                <!-- guna relative path + fallback inline SVG jika gambar tiada -->
+                <img src="./image/logo.png" alt="Moonlit Books Logo" class="logo" 
+                     onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2258%22 height=%2258%22 viewBox=%220 0 58 58%22%3E%3Crect width=%2258%22 height=%2258%22 fill=%22%234B2E83%22/%3E%3Ctext x=%2229%22 y=%2236%22 text-anchor=%22middle%22 fill=%22white%22 font-size=%2220%22 font-family=%22monospace%22%3EMB%3C/text%3E%3C/svg%3E'">
                 <div class="brand-text">
                     <h2>Moonlit <br>Books</h2>
                 </div>
             </div>
-
-            <!-- MENU -->
             <ul class="menu-links">
                 <li class="active"><a href="dashboard.html"><i class='bx bxs-dashboard'></i><span>Dashboard</span></a></li>
                 <li><a href="mybooks.html"><i class='bx bx-book'></i><span>My Books</span></a></li>
@@ -46,8 +45,6 @@
                 <li><a href="profile.html"><i class='bx bx-user'></i><span>Profile</span></a></li>
             </ul>
         </div>
-
-        <!-- LOGOUT -->
         <div class="logout-btn">
             <a href="index.html"><i class='bx bx-log-out'></i><span>Logout</span></a>
         </div>
@@ -55,8 +52,6 @@
 
     <!-- MAIN CONTENT -->
     <div class="main-content">
-
-        <!-- TOPBAR -->
         <div class="topbar">
             <div class="menu-toggle" id="menuToggle"><i class='bx bx-menu'></i></div>
             <div class="search-box">
@@ -66,18 +61,17 @@
             <div class="top-right">
                 <a href="notification.html" class="notification"><i class='bx bx-bell'></i><span>3</span></a>
                 <div class="profile-box">
-                    <img src="image/profilepicture.jpg" alt="Profile" class="profile-img" onerror="this.src='https://randomuser.me/api/portraits/women/68.jpg'">
+                    <img src="./image/profilepicture.jpg" alt="Profile" class="profile-img"
+                         onerror="this.src='https://randomuser.me/api/portraits/women/68.jpg'">
                 </div>
             </div>
         </div>
 
-        <!-- WELCOME -->
         <div class="welcome-section">
             <h1>Welcome back! 👋</h1>
             <p>Here's your reading overview.</p>
         </div>
 
-        <!-- STATS CARDS -->
         <div class="stats-grid">
             <div class="stats-card"><div class="stats-icon"><i class='bx bx-bookmark'></i></div><h4>To Read</h4><h2>6</h2></div>
             <div class="stats-card"><div class="stats-icon"><i class='bx bx-book-open'></i></div><h4>Currently Reading</h4><h2>2</h2></div>
@@ -86,31 +80,18 @@
             <div class="stats-card"><div class="stats-icon"><i class='bx bx-library'></i></div><h4>Total Books</h4><h2>36</h2></div>
         </div>
 
-        <!-- CHARTS -->
         <div class="chart-wrapper">
-            <!-- BAR CHART -->
             <div class="chart-card">
                 <div class="chart-header"><h3>Books Read This Year</h3></div>
                 <div class="bar-chart">
-                    <div class="bar" style="height:45%;"></div>
-                    <div class="bar" style="height:30%;"></div>
-                    <div class="bar" style="height:25%;"></div>
-                    <div class="bar" style="height:60%;"></div>
-                    <div class="bar" style="height:40%;"></div>
-                    <div class="bar" style="height:70%;"></div>
-                    <div class="bar" style="height:85%;"></div>
-                    <div class="bar" style="height:90%;"></div>
-                    <div class="bar" style="height:65%;"></div>
-                    <div class="bar" style="height:35%;"></div>
+                    <div class="bar" style="height:45%;"></div><div class="bar" style="height:30%;"></div>
+                    <div class="bar" style="height:25%;"></div><div class="bar" style="height:60%;"></div>
+                    <div class="bar" style="height:40%;"></div><div class="bar" style="height:70%;"></div>
+                    <div class="bar" style="height:85%;"></div><div class="bar" style="height:90%;"></div>
+                    <div class="bar" style="height:65%;"></div><div class="bar" style="height:35%;"></div>
                 </div>
-                <div class="months">
-                    <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span>
-                    <span>May</span><span>Jun</span><span>Jul</span><span>Aug</span>
-                    <span>Sep</span><span>Oct</span>
-                </div>
+                <div class="months"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span></div>
             </div>
-
-            <!-- DONUT CHART -->
             <div class="chart-card">
                 <div class="chart-header"><h3>Top Genres</h3></div>
                 <div class="donut-section">
@@ -126,7 +107,6 @@
             </div>
         </div>
 
-        <!-- RECENT ACTIVITY -->
         <div class="recent-card">
             <div class="recent-header"><h3>Recent Activity</h3><button>View Book</button></div>
             <div class="recent-content">
@@ -135,15 +115,18 @@
             </div>
         </div>
 
-        <!-- FOOTER (added as per image) -->
+        <!-- FOOTER YANG DIPERBAIKI - ALIGNMENT SAMA SEPERTI SIDEBAR BRAND -->
         <footer class="dashboard-footer">
             <div class="footer-inner">
-                <div class="footer-brand-area">
-                    <div class="footer-logo-wrap">
-                        <img src="image/logo.png" alt="Moonlit Books" class="footer-logo" onerror="this.src='https://placehold.co/52x52/4B2E83/white?text=MB'">
-                        <div class="footer-brand-text"><h3>Moonlit Books</h3></div>
+                <div class="footer-left">
+                    <div class="footer-brand-row">
+                        <img src="./image/logo.png" alt="Moonlit Books" class="footer-logo-img"
+                             onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2258%22 height=%2258%22 viewBox=%220 0 58 58%22%3E%3Crect width=%2258%22 height=%2258%22 fill=%22%234B2E83%22/%3E%3Ctext x=%2229%22 y=%2236%22 text-anchor=%22middle%22 fill=%22white%22 font-size=%2220%22 font-family=%22monospace%22%3EMB%3C/text%3E%3C/svg%3E'">
+                        <h3 class="footer-brand-name">Moonlit Books</h3>
                     </div>
-                    <div class="footer-copyright"><p>© 2024 Moonlit Books. All rights reserved.</p></div>
+                    <div class="footer-copyright">
+                        <p>© 2024 Moonlit Books. All rights reserved.</p>
+                    </div>
                 </div>
                 <div class="footer-newsletter">
                     <h4>Newsletter</h4>
@@ -156,10 +139,10 @@
                 <div class="footer-social">
                     <h4>Follow Us</h4>
                     <div class="social-icons">
-                        <a href="#" aria-label="LinkedIn"><i class='bx bxl-linkedin-square'></i></a>
-                        <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
-                        <a href="#" aria-label="Facebook"><i class='bx bxl-facebook-square'></i></a>
-                        <a href="#" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                        <a href="#"><i class='bx bxl-youtube'></i></a>
                     </div>
                 </div>
             </div>
@@ -171,9 +154,7 @@
 <script>
     const menuToggle = document.getElementById("menuToggle");
     const sidebar = document.getElementById("sidebar");
-    menuToggle.onclick = function() {
-        sidebar.classList.toggle("close");
-    };
+    menuToggle.onclick = () => sidebar.classList.toggle("close");
 </script>
 </body>
 </html>
