@@ -15,7 +15,7 @@ body {
     min-height: 100vh;
 }
 
-/* SIDEBAR (sama) */
+/* SIDEBAR */
 .sidebar {
     width: 280px;
     background: #ffffff;
@@ -372,7 +372,7 @@ body {
     gap: 40px;
 }
 
-/* Left brand - hanya teks dan copyright */
+
 .footer-brand {
     flex: 1.2;
     min-width: 200px;
@@ -396,7 +396,7 @@ body {
     font-weight: 400;
 }
 
-/* Newsletter (sama) */
+/* Newsletter  */
 .footer-newsletter {
     flex: 1.8;
     min-width: 240px;
@@ -456,7 +456,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* Social (sama) */
+/* Social */
 .footer-social {
     flex: 1;
     min-width: 160px;
